@@ -1,0 +1,11 @@
+
+    <!-- Sobre -->
+    <section class="section" id="sobre">
+        <h1 class="titulo-padrao">sobre nós</h1>
+        {% for conteudo in sobre %}
+            <div class="text-img-sobre">
+                <p class="coteudo-sobre">{{ conteudo.texto }}</p>
+                <img class="familia-twocanada2" src="{{conteudo.imagem}}" alt="">
+            </div>
+        {% endfor %}
+    </section>

@@ -1,0 +1,16 @@
+    <!-- Parceiros -->
+    <section class="section" id="parceiros">
+        <h1 class="titulo-padrao">Nossos parceiros</h1>
+        <div class="parceiros">
+            {% for parceiro in parceiros %}
+                <div class="parceiro">
+                    <img src="{{ parceiro.imagem }}" alt="">
+                    <a class="link-parceiro" href={{parceiro.site_oficial}} target="_blank">
+                        <div class="overlay">
+                            <div class="texto-hover">Acesse o Site Oficial</div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </section>

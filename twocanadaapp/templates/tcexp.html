@@ -1,0 +1,77 @@
+ <!-- TCEXP -->
+    <section class="section" id="tcexp">
+        <div class="titulo-tcexp">
+            <h1 class="titulo-padrao">twoCanada</h1><h2 class="titulo-padrao"> Experience</h2>
+        </div>
+
+        {% for elemento in tcexp %}
+            <p class="conteudo-tcexp">{{elemento.texto}}</p>
+        {% endfor %}
+
+        <div class="container-carousel-tcexp">
+            <input type="radio" name="slider-carousel-tcexp" id="item-carousel-tcexp-1" />
+            <input type="radio" name="slider-carousel-tcexp" id="item-carousel-tcexp-2"/>
+            <input type="radio" name="slider-carousel-tcexp" id="item-carousel-tcexp-3" checked/>
+            <input type="radio" name="slider-carousel-tcexp" id="item-carousel-tcexp-4"/>
+            <input type="radio" name="slider-carousel-tcexp" id="item-carousel-tcexp-5"/>
+            <div class="cards-carousel-tcexp">
+                <label for="item-carousel-tcexp-1" class="card-carousel-tcexp" id="song-carousel-tcexp-1">
+                    <img src="static/img/banff.jpg" alt="">
+                </label>
+
+                <label for="item-carousel-tcexp-2" class="card-carousel-tcexp" id="song-carousel-tcexp-2">
+                    <img src="static/img/moraine1.png" alt="">
+                </label>
+
+                <label for="item-carousel-tcexp-3" class="card-carousel-tcexp" id="song-carousel-tcexp-3">
+                    <img src="static/img/rota_down_town.png" alt="">
+                </label>
+
+                <label for="item-carousel-tcexp-4" class="card-carousel-tcexp" id="song-carousel-tcexp-4">
+                    <img src="static/img/rota_boas_vindas.png" alt="">
+                </label>
+
+                <label for="item-carousel-tcexp-5" class="card-carousel-tcexp" id="song-carousel-tcexp-5">
+                    <img src="static/img/rota_montanhas.png" alt="">
+                </label>
+            </div>
+        </div>
+
+        <a class="ancora-botao-insta-tcexp" href="https://www.instagram.com/twocanadaexperience/" target="_blank"><button class="botao-insta-tcexp"><img src="static/img/icons/icons-instagram-96.png" alt=""><h4>Siga TCEXP</h4></button></a>
+
+        <!-- TCEXP Roteiros -->
+        <div class="titulo-tcexp-roteiros">
+            <h1>TCEXP</h1><h2> Roteiros</h2>
+        </div>
+
+        <div class="cards-tcexp">
+            <div class="card-tcexp">
+                <img class="imagem-card-1" src="static/img/welcome.png" alt="">
+                <div class="conteudo-card">
+                    <h3 class="titulo-card-tcexp">rota boas-vindas</h3>
+                    <p>Pacote com tudo que você precisará assim que chegar ao Canadá. Oferecemos: Transfer do aeroporto ao hotel, acompanhamento em supermercados para 1º compra e um rápido overview da cidade. Conte conosco!</p>
+                    <a href="mailto:tcexp@twocanada.ca" class="botoes-tcexp">Envie um e-mail</a>
+                </div>
+            </div>
+
+            <div class="card-tcexp">
+                <img class="imagem-cards-2" src="static/img/downtown-calgary.png" alt="">
+                <div class="conteudo-card">
+                    <h3 class="titulo-card-tcexp">rota downtown</h3>
+                    <p>Além do tour detalhado na cidade, leva você a pontos incríveis de Calgary! Como a espetacular Biblioteca Central, a Calgary Tower e o agitado Stephen Avenue Walk. Explore o coração da cidade e crie memórias inesquecíveis!</p>
+                    <a href="mailto:tcexp@twocanada.ca" class="botoes-tcexp">Envie um e-mail</a>
+                </div>
+            </div>
+
+            <div class="card-tcexp">
+                <img class="imagem-cards-3" src="static/img/montanhas.png" alt="">
+                <div class="conteudo-card">
+                    <h3 class="titulo-card-tcexp">rota montanhas</h3>
+                    <p>Faça trilhas nas Rocky Mountains visitando joias como o Lake Louise, Moraine Lake, a cidade de Banff e muito mais. Cada parada revela a majestade das montanhas e a serenidade dos lagos cristalinos. Uma experiência imperdível na natureza selvagem do Canadá!</p>
+                    <a href="mailto:tcexp@twocanada.ca" class="botoes-tcexp">Envie um e-mail</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>

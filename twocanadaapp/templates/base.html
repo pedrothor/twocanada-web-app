@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&family=Quintessential&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'img/icons/canada-ico.png' %}">
+
+    <title>TwoCanada</title>
+</head>
+
+<header>
+    <div class="navbar">
+        <div class="itens-navbar">
+            <a href="{% url 'index' %}"><img class="logo-twocanada" src="static/img/twocanada_branco.png" alt="twocanada"></a>
+            <ul>
+                <li class="item-navbar"><a href="{% url 'index' %}#inicio">início</a></li>
+                <li class="item-navbar"><a href="{% url 'index' %}#sobre">sobre</a></li>
+                <li class="item-navbar"><a href="{% url 'index' %}#tcexp">tcexp</a></li>
+                <li class="item-navbar"><a href="{% url 'index' %}#podcast">podcast</a></li>
+                <li class="item-navbar"><a href="{% url 'index' %}#parceiros">parceiros</a></li>
+            </ul>
+        </div>
+    </div>
+</header>

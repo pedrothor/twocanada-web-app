@@ -1,0 +1,42 @@
+    <!-- Podcast -->
+    <section class="section" id="podcast">
+        <div class="titulos-podcast">
+            <h1 class="titulo-padrao">twoCanada</h1>
+            <h2 class="titulo-padrao">podcast</h2>
+        </div>
+        {% for elemento in podcast %}
+            <p class="texto-podcast">{{elemento.texto}}</p>
+            <img class="img-podcast" src="{{elemento.imagem}}" alt="">
+        {% endfor %}
+
+
+        <div class="titulo-tcexp-roteiros">
+            <h1>Últimos</h1><h2> Podcasts</h2>
+        </div>
+
+        <!-- Últimos Podcasts -->
+        <div class="container-ultimos-podcasts">
+            <div class="ultimos-podcasts">
+                {% for video in videos_db %}
+                    <a href="https://youtube.com/watch?v={{video.video_id}}" target="_blank">
+                        <div class="card-ultimo-podcast">
+                            <div class="conteudo-card-ultimo-podcast">
+                                <img src={{video.imagem}} alt="">
+                                <p title="{{ video.nome }}">{{ video.nome|capfirst }}</p>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="acompanhar-podcast">
+            <p>Acompanhe-nos também em:</p>
+            <div class="botoes-podcast">
+                <a href="https://open.spotify.com/show/1R3LPyG8FNL555SEq95ftj" target="_blank"><button class="botao-spotify"><img src="static/img/icons/icon-spotify.png" alt=""><strong>Spotify</strong></button></a>
+                <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82NjczZmYzMC9wb2RjYXN0L3Jzcw" target="_blank"><button class="botao-google"><img class="icones-botoes" src="static/img/icons/icons-google-podcasts.png" alt=""><strong>Google Podcasts</strong></button></a>
+                <a href="https://podcasts.apple.com/us/podcast/twocanada/id1678224801" target="_blank"><button class="botao-apple"><img src="static/img/icons/icon-apple-podcast.png" alt=""><strong>Apple podcast</strong></button></a>
+                <a href="https://www.youtube.com/playlist?list=PL_vS95-NEpwbm3Y8JAQYPx1AZUBThkGja" target="_blank"><button class="botao-youtube"><img src="static/img/icons/icons-youtube-96.png" alt=""><strong>Youtube</strong></button></a>
+            </div>
+        </div>
+    </section>

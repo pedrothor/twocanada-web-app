@@ -1,0 +1,40 @@
+    <div class="icones-footer" id="footer">
+        <a href="https://www.instagram.com/twocanada/" target="_blank"><img class="icone" src="static/img/icons/icons-instagram-96.png" alt=""></a>
+        <a href="https://www.youtube.com/@twocanada" target="_blank"><img class="icone" src="static/img/icons/icons-youtube-96.png" alt=""></a>
+        <a href="https://t.me/twocanada" target="_blank"><img class="icone" src="static/img/icons/icons-telegram-96.png" alt=""></a>
+        <p class="p-footer-twocanada">© 2023 TwoCanada</p>
+    </div>
+
+    <style>
+        body {
+            @media (max-width: 426px) {
+                background-image: url('static/img/background-mobile.png');
+            }
+
+            background-image: url('static/img/background.png');
+        }
+    </style>
+
+    <!-- JS -->
+    <script src="static/js/script.js"></script>
+    <script>
+        const sectionInicio = document.querySelector('.section-inicio');
+
+        function ajustarAltura() {
+            const alturaMonitor = window.screen.height;
+
+            if (alturaMonitor > 1070) {
+                sectionInicio.style.height = '950px';
+            } else {
+                sectionInicio.style.height = '750px';
+            }
+        }
+
+        // Executa a função de ajustarAltura quando a janela for redimensionada
+        window.addEventListener('resize', ajustarAltura);
+
+        ajustarAltura();
+
+    </script>
+</body>
+</html>
